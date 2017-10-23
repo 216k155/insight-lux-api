@@ -33,7 +33,7 @@
   "bitcoreNode": "lib",
   "dependencies": {
     "async": "*",
-    "luxcore-lib": "^0.13.22",
+    "luxcore-lib": "^0.13.23",
     "luxcore-message": "^1.0.5",
     "body-parser": "^1.13.3",
     "compression": "^1.6.1",
