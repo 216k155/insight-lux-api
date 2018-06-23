@@ -1,7 +1,7 @@
 'use strict';
 var should = require('should');
 var sinon = require('sinon');
-var bitcore = require('luxcore-lib');
+var bitcore = require('bitcore-lib');
 var TxController = require('../lib/transactions');
 var _ = require('lodash');
 
@@ -177,7 +177,7 @@ describe('Transactions', function() {
       var node = {
         getDetailedTransaction: sinon.stub().callsArgWith(1, null, detailedTransaction),
         services: {
-          bitcoind: {
+          luxd: {
             height: 534203
           },
         },
@@ -357,7 +357,7 @@ describe('Transactions', function() {
           callback(null, transactionDetails[txid]);
         },
         services: {
-          bitcoind: {
+          luxd: {
             height: 534209
           }
         },
@@ -740,7 +740,7 @@ describe('Transactions', function() {
       var node = {
         getAddressHistory: sinon.stub().callsArgWith(2, null, historyResult),
         services: {
-          bitcoind: {
+          luxd: {
             height: 534223
           }
         },

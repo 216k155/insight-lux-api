@@ -1,24 +1,19 @@
 {
-  "name": "insight-lux-api",
-  "description": "A Luxcoin blockchain REST and web socket API service for Litecore Node.",
-  "version": "0.4.4",
-  "repository": "git://github.com/216k155/insight-lux-api.git",
-  "contributors": [
-    {
-      "name": "216k155",
-      "email": "216k155@i2pd.net"
-    }
-  ],
+  "name": "lux-insight-api",
+  "description": "A LUX blockchain REST and web socket API service for Luxcore Node.",
+  "version": "0.0.23",
+  "repository": "https://github.com/216k155/insight-api.git",
+  "contributors": [],
   "bugs": {
-    "url": "https://github.com/216k155/insight-lux-api/issues"
+    "url": "https://github.com/216k155/insight-api/issues"
   },
-  "homepage": "https://github.com/216k155/insight-lux-api",
+  "homepage": "https://github.com/216k155/insight-api",
   "license": "MIT",
   "keywords": [
     "insight",
     "insight api",
     "blockchain",
-    "luxcoin api",
+    "lux api",
     "blockchain api",
     "json",
     "luxcore"
@@ -30,17 +25,22 @@
     "test": "NODE_ENV=test mocha -R spec --recursive"
   },
   "main": "lib",
-  "bitcoreNode": "lib",
+  "luxcoreNode": "lib",
   "dependencies": {
     "async": "*",
-    "luxcore-lib": "^0.13.23",
-    "luxcore-message": "^1.0.5",
+    "bignumber.js": "^4.0.2",
+    "bitcore-lib": "^0.13.7",
+    "bitcore-message": "^1.0.1",
     "body-parser": "^1.13.3",
     "compression": "^1.6.1",
     "lodash": "^2.4.1",
     "lru-cache": "^4.0.1",
+    "moment": "^2.19.3",
+    "mongoose": "^4.11.8",
     "morgan": "^1.7.0",
-    "request": "^2.64.0"
+    "luxcore-lib": "https://github.com/216k155/luxcore-lib.git#master",
+    "request": "^2.83.0",
+    "web3": "^0.18.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
